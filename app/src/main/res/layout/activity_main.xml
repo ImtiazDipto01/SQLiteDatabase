@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    tools:context="com.example.admin.insertquery.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your User Name"
+        android:textSize="20sp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="100dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/uid"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Password"
+        android:textSize="20sp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/pass"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_user"
+        android:text="Add User"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:padding="15dp"
+        android:textColor="#fafafa"
+        android:background="#303F9F"
+        android:onClick="adduser"/>
+
+</LinearLayout>

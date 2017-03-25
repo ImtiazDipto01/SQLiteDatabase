@@ -14,7 +14,7 @@
         android:text="Enter Your User Name"
         android:textSize="20sp"
         android:layout_marginLeft="2dp"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="20dp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,10 +42,21 @@
         android:id="@+id/add_user"
         android:text="Add User"
         android:textSize="20sp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="8dp"
         android:padding="15dp"
         android:textColor="#fafafa"
         android:background="#303F9F"
         android:onClick="adduser"/>
+
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_show_user_info"
+        android:text="Show User Info"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textColor="#fafafa"
+        android:background="#303F9F" />
 
 </LinearLayout>

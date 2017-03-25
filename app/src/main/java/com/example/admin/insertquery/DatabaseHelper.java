@@ -3,6 +3,7 @@ package com.example.admin.insertquery;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
@@ -56,6 +57,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         catch(SQLiteException e){
             Message.message(context, ""+e);
         }
+    }
+
+    public Cursor getData(SQLiteDatabase db){
+
+        Cursor cursor ;
+        String[] column_name = {ColumnName.NAME, ColumnName.PASSWORD} ;
+
+        cursor = db.query(ColumnName.TABLE_NAME, column_name, null, null, null, null, null) ;
+        return cursor ;
     }
 
     @Override

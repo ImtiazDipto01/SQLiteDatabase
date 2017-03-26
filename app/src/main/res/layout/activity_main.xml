@@ -59,4 +59,16 @@
         android:textColor="#fafafa"
         android:background="#303F9F" />
 
+    <Button
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_3"
+        android:text="Search User"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textColor="#fafafa"
+        android:background="#303F9F"
+        android:onClick="SearchResult"/>
+
 </LinearLayout>

@@ -68,6 +68,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cursor ;
     }
 
+    public Cursor getuserinfo(String user_name, SQLiteDatabase db){
+
+        Cursor cursor ;
+        String[] column_name = {ColumnName.NAME, ColumnName.PASSWORD} ;
+        String selection = ColumnName.NAME+" LIKE ?" ;
+        String[] selection_args = {user_name} ;
+        cursor = db.query(ColumnName.TABLE_NAME, column_name, selection, selection_args, null, null, null);
+        return cursor ;
+    }
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 

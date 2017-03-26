@@ -13,7 +13,7 @@ import android.widget.ListView;
 public class MainActivity extends AppCompatActivity {
 
     EditText username, password ;
-    Button btn_showuser ;
+    Button btn_showuser, btn_search_user ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,18 @@ public class MainActivity extends AppCompatActivity {
         username = (EditText) findViewById(R.id.uid) ;
         password = (EditText) findViewById(R.id.pass) ;
 
+
         btn_showuser = (Button) findViewById(R.id.btn_show_user_info) ;
+        btn_search_user = (Button) findViewById(R.id.btn_3) ;
+
+        btn_search_user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent secondintent = new Intent(getApplicationContext(), SearchResult.class) ;
+                startActivity(secondintent);
+            }
+        });
 
         btn_showuser.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,4 +55,5 @@ public class MainActivity extends AppCompatActivity {
         databaseHelper.addData(user, pass, db);
         databaseHelper.close();
     }
+
 }

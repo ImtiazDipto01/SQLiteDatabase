@@ -21,6 +21,11 @@
             android:name=".ShowUserInfo"
             android:label="User Info">
         </activity>
+
+        <activity
+            android:name=".SearchResult"
+            android:label="Search">
+        </activity>
     </application>
 
 </manifest>
